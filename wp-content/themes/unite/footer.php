@@ -32,17 +32,23 @@
 <script>
  jQuery('h1').fitText(1.0 ,{ minFontSize: '10px', maxFontSize: '36px' });
  
- // Copyright 2014-2015 Twitter, Inc.
-// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement('style')
+ (function() {
+	if (navigator.userAgent.match(/IEMobile/)) {
+	
+	jQuery('.front-page-post-thumbnail').css('max-width','300px');
+	
+  /*var msViewportStyle = document.createElement('style');
   msViewportStyle.appendChild(
     document.createTextNode(
       '@-ms-viewport{width:auto!important}'
     )
-  )
+  );
+  
+  alert(document.getElementsById('homeCarousel').offsetWidth);
   document.querySelector('head').appendChild(msViewportStyle)
+}*/
 }
+})();
  
 </script>
 </body>

@@ -65,14 +65,7 @@
 	
 	padding-bottom:15px;
 
-    /*Only for windows phone browsers*/
-	max-width: 90vw;
-	align-content: center;
-    position: relative;
-    min-height: 1px;
-    float: left;
-    width: 100%;
-}
+ }
 
 	
 
